@@ -72,8 +72,9 @@ section{
 
 .startQuiz{
   display: flex;
+  width: 200%;
   justify-content: center;
-  width: 100%;
+  
 }
 
 .rightAnswer{
