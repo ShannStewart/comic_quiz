@@ -38,7 +38,7 @@ section{
 
 .quizSlide{
   display: flex; 
-  width: auto;
+  width: 90%;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
@@ -70,9 +70,9 @@ section{
   color: white;
 }
 
-.startQuiz{
+.startQuiz, .continueQuiz{
   display: flex;
-  width: 200%;
+  width: 100%;
   justify-content: center;
   
 }
