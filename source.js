@@ -1,63 +1,33 @@
-const STORE = [
+ const STORE = [
   //00
   {
-    question: "What is A?",
-    choices: ["A", "B", "C", "D"],
-    answer: "A"
+    question: "When does Peter Parker become Spider-Man?",
+    choices: ["13", "15", "10", "2"],
+    answer: "15"
   },
   //01  
   {
-    question: "What is B?",
-    choices: ["A", "B", "C", "D"],
-    answer: "B"
+    question: "What color was X-Men's Beast originally?",
+    choices: ["Blue", "Gray", "Red", "Black"],
+    answer: "Gray"
   },
   //02
   {
-    question: "What is C?",
-    choices: ["A", "B", "C", "D"],
-    answer: "C"
+    question: "Wolverine was born in which country?",
+    choices: ["United States", "France", "Canada", "Germany"],
+    answer: "Canada"
   },
    //03
   {
-    question: "What is D?",
-    choices: ["A", "B", "C", "D"],
-    answer: "D"
+    question: "Storm as a young girl trained as a ____",
+    choices: ["Priestness", "Thief", "Juggler", "Clown"],
+    answer: "Thief"
   },
    //04
   {
-    question: "What is C?",
-    choices: ["A", "B", "C", "D"],
-    answer: "C"
-  },
-   //05
-  {
-    question: "What is B?",
-    choices: ["A", "B", "C", "D"],
-    answer: "B"
-  },
-   //06
-  {
-    question: "What is A?",
-    choices: ["A", "B", "C", "D"],
-    answer: "A"
-  },
-   //07
-  {
-    question: "What is B?",
-    choices: ["A", "B", "C", "D"],
-    answer: "B"
-  },
-   //08
-  {
-    question: "What is C?",
-    choices: ["A", "B", "C", "D"],
-    answer: "C"
-  },
-   //09
-  {
-    question: "What is D?",
-    choices: ["A", "B", "C", "D"],
-    answer: "D"
+    question: "What is the 'scientific' name for muntant kind?",
+    choices: ["Homo Supreme", "Homo Superb", "Homo Mutantis", "Homo Superior"],
+    answer: "Homo Superior"
   },
 ]
 
