@@ -1,4 +1,5 @@
- const STORE = [
+  
+const STORE = [
   //00
   {
     question: "When does Peter Parker become Spider-Man?",
