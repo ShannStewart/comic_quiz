@@ -29,8 +29,16 @@ function fabricateQuestion(){
     let answerC = STORE[currentQuestion].choices[2];
     let answerD = STORE[currentQuestion].choices[3];  
 
+    let displayQuestion = currentQuestion + 1;
+    let totalQuestions = STORE.length;
+
       $(".quizSection").append(
-        "<div class='quizQuestion quizSlide'><h1>" + questionTitle + "</h1> <div class='quizAnswers'> <button class='choice'>" + answerA + "</button> <button class='choice'>" + answerB + "</button> <button class='choice'>" + answerC + "</button> <button class='choice'>" + answerD + "</button> </div></div>"
+        "<div class='quizQuestion quizSlide'><h1>" + questionTitle + 
+        "</h1> <div class='quizAnswers'> <button class='choice'>" + answerA + 
+        "</button> <button class='choice'>" + answerB + 
+        "</button> <button class='choice'>" + answerC + 
+        "</button> <button class='choice'>" + answerD + 
+        "</button> </div> <div class='quizInfo'><h1>Question " + displayQuestion + " out of " + totalQuestions + "</h1><h1>Score: " + correctAnswers + "</h1></div></div>"
       );
     
     $('.quizAnswers').on('click', '.choice', function(event){
@@ -77,9 +85,17 @@ function recieveAnswer(answer){
     // add class rightAnswer to quiz section if correct = true
     // add class wrongAnswer to quizSection if correct = false
     
-    $(".quizSection").append(
-      "<div class='quizSlide'><h1>The answer was " + quizAnswer + "</h1><button class='continueQuiz'>Next Question</button></div>"
-      );
+    if(answer == quizAnswer){
+      $(".quizSection").append(
+        "<div class='quizSlide'><h1>Correct, the answer was " + quizAnswer + "</h1><button class='continueQuiz'>Next Question</button></div>"
+        );
+    }
+      else{
+        $(".quizSection").append(
+          "<div class='quizSlide'><h1>Wrong, the answer was " + quizAnswer + "</h1><button class='continueQuiz'>Next Question</button></div>"
+          );
+      }
+    
 
       continueQuiz();
    }

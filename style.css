@@ -44,6 +44,11 @@ section{
   align-items: center;
 }
 
+.quizTitle{
+  font-size: 35px;
+  flex-grow: 1;
+}
+
 .quizQuestion{
   margin: 10px;
 }
@@ -57,30 +62,46 @@ section{
   flex-grow: 1;
 }
 
-.choice{
+.quizInfo{
   display: flex;
-  height: 25px;
+  width: 90%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+
+button{
+  color: white;
+  background-color: red;
+  font-size: 20px;
+  display: flex;
+  flex-grow: 1;
   filter: drop-shadow(0px 0px 1px grey);
   cursor: pointer;
   margin: 5px;
 }
 
-.choice:hover{
-  background-color: grey;
-  color: white;
+
+button:hover{
+  background-color: black;
+  ;
 }
 
 .startQuiz, .continueQuiz{
   display: flex;
   width: 100%;
   justify-content: center;
+  cursor: pointer;
   
 }
 
 .rightAnswer{
-  background-color: greenyellow;
+  background-color: blue;
+  color: white;
 }
 
 .wrongAnswer{
-  background-color: red;
+  background-color: black;
+  color: white;
 }
