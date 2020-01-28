@@ -85,7 +85,21 @@ button{
 
 button:hover{
   background-color: black;
-  ;
+}
+
+input{
+  color: white;
+  background-color: red;
+  font-size: 20px;
+  display: flex;
+  flex-grow: 1;
+  filter: drop-shadow(0px 0px 1px grey);
+  cursor: pointer;
+  margin: 5px;
+}
+
+input:hover{
+  background-color: black;
 }
 
 .startQuiz, .continueQuiz{

@@ -34,16 +34,18 @@ function fabricateQuestion(){
 
       $(".quizSection").append(
         "<div class='quizQuestion quizSlide'><h1>" + questionTitle + 
-        "</h1> <div class='quizAnswers'> <button class='choice'>" + answerA + 
-        "</button> <button class='choice'>" + answerB + 
-        "</button> <button class='choice'>" + answerC + 
-        "</button> <button class='choice'>" + answerD + 
-        "</button> </div> <div class='quizInfo'><h1>Question " + displayQuestion + " out of " + totalQuestions + "</h1><h1>Score: " + correctAnswers + "</h1></div></div>"
+        "</h1>  <form class='quizAnswers'> <input type='submit' value='" + answerA + 
+        "' class='choice'></input> <input type='submit' value='" + answerB + 
+        "' class='choice'></input> <input type='submit' value='" + answerC + 
+        "' class='choice'></input> <input type='submit' value='" + answerD + 
+        "' class='choice'></input> <div class='quizInfo'><h1>Question " + displayQuestion + " out of " + totalQuestions + "</h1><h1>Score: " + correctAnswers + "</h1></div></div>"
       );
     
-    $('.quizAnswers').on('click', '.choice', function(event){
+    $('.quizAnswers').on('click', 'input', function(event){
+
+      event.preventDefault();
       
-      let playerAnswer = $(this).text();
+      let playerAnswer = $(this).val();
       
       console.log(playerAnswer + " clicked");
       
