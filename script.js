@@ -34,10 +34,10 @@ function fabricateQuestion(){
 
       $(".quizSection").append(
         "<div class='quizQuestion quizSlide'><h1>" + questionTitle + 
-        "</h1>  <form class='quizAnswers'> <input type='submit' value='" + answerA + 
-        "' class='choice'></input> <input type='submit' value='" + answerB + 
-        "' class='choice'></input> <input type='submit' value='" + answerC + 
-        "' class='choice'></input> <input type='submit' value='" + answerD + 
+        "</h1>  <form class='quizAnswers'> <input type='submit' name='answer' value='" + answerA + 
+        "' class='choice'></input> <input type='submit' name='answer' value='" + answerB + 
+        "' class='choice'></input> <input type='submit' name='answer' value='" + answerC + 
+        "' class='choice'></input> <input type='submit' name='answer' value='" + answerD + 
         "' class='choice'></input> <div class='quizInfo'><h1>Question " + displayQuestion + " out of " + totalQuestions + "</h1><h1>Score: " + correctAnswers + "</h1></div></div>"
       );
     
