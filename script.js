@@ -33,12 +33,12 @@ function fabricateQuestion(){
     let totalQuestions = STORE.length;
 
       $(".quizSection").append(
-        "<div class='quizQuestion quizSlide'><h1>" + questionTitle + 
-        "</h1>  <form class='quizAnswers'> <input type='submit' name='answer' value='" + answerA + 
-        "' class='choice'></input> <input type='submit' name='answer' value='" + answerB + 
-        "' class='choice'></input> <input type='submit' name='answer' value='" + answerC + 
-        "' class='choice'></input> <input type='submit' name='answer' value='" + answerD + 
-        "' class='choice'></input> <div class='quizInfo'><h1>Question " + displayQuestion + " out of " + totalQuestions + "</h1><h1>Score: " + correctAnswers + "</h1></div></div>"
+        "<div class='quizQuestion quizSlide'><h2>" + questionTitle + 
+        "</h2>  <form class='quizAnswers'> <input type='submit' value='" + answerA + 
+        "' class='choice'></input> <input type='submit' value='" + answerB + 
+        "' class='choice'></input> <input type='submit' value='" + answerC + 
+        "' class='choice'></input> <input type='submit' value='" + answerD + 
+        "' class='choice'></input> <div class='quizInfo'><h3>Question " + displayQuestion + " out of " + totalQuestions + "</h3><h3>Score: " + correctAnswers + "</h3></div></div>"
       );
     
     $('.quizAnswers').on('click', 'input', function(event){
